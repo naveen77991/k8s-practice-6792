@@ -10,7 +10,8 @@ spec:
   matchLabels: 
    color: green 
  template: 
-   metadata: 
+   metadata:  
+   name: hello 
    labels: 
     color: green
    spec: 
