@@ -1,15 +1,16 @@
-apiVersion: v1 
+apiVersion: v1
 kind: Pod
 metadata: 
-  name: request
+  name: javahello
 spec: 
   containers: 
-     - name: java 
-       image: nginx 
-       resources: 
-         requests: 
-            memory: "128Mi"
-            cpu: "50m" 
-         limits: 
-           memory: "256Mi"
-           cpu: "100m" 
+    - name: hello 
+      image: nginx 
+      resources: 
+        requests: 
+          memory: "128Mi"
+          cpu: "59m"
+        limits: 
+          memory: "256Mi" 
+          cpu: "200m" 
+                   
