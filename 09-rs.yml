@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: ReplicaSet 
+metadata: name 
+spec: 
+ replicas: 2
+ selector: 
+  matchLabels: 
+   color: green 
+ template: 
+  metadata: 
+    name: java
+    labels: 
+     color: green
+  spec: 
+   containers: 
+     - name: java 
+       image: nginx 
+
+
+ 
