@@ -1,6 +1,9 @@
 apiVersion: apps/v1
 kind: ReplicaSet 
-metadata: name 
+metadata: 
+  name: hello 
+  labels: 
+    color: green 
 spec: 
  replicas: 2
  selector: 
